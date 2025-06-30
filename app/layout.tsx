@@ -7,8 +7,7 @@ import {
   Montserrat,
 } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/header/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +36,8 @@ const geistMontserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "CarLux",
-  description: "Car Showroom",
+  title: "CarLux Ukraine",
+  description: "Car Showroom Ukraine",
 };
 
 export default function RootLayout({
@@ -64,7 +63,6 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex-grow">{children}</main>
-        <Footer />
       </body>
     </html>
   );

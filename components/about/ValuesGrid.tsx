@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { values } from "../constants/values";
+import { values } from "../../constants/values";
 
 export default function ValuesGrid() {
   return (

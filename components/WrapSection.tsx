@@ -8,7 +8,7 @@ function WrapSection({
       className={`
         relative w-full
         gradient-bg
-        mt-[94px]
+        mt-[110px]
         text-white flex flex-col items-center justify-center
         px-6 md:px-10 lg:px-12 pt-9 pb-9
         overflow-y-auto md:overflow-hidden 
