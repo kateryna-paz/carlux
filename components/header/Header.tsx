@@ -14,14 +14,14 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header className="bg-transparent w-full h-[110px] flex items-center justify-between px-8 lg:px-16 absolute top-0 left-0 z-30">
+    <header className="bg-transparent w-full h-[115px] flex items-center justify-between px-8 lg:px-16 absolute top-0 left-0 z-30">
       <Logo />
 
-      <nav className="hidden md:flex space-x-8 lg:space-x-14 items-center">
+      <nav className="hidden md:flex space-x-6 lg:space-x-10 items-center">
         <NavLinks />
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center lg:space-x-5 md:space-x-3">
           <ContactInfo />
-          <div className="w-px h-8 bg-gray-600"></div>
+          <div className="w-px h-12 bg-gray-600"></div>
           <SocialLinks size={30} />
         </div>
       </nav>

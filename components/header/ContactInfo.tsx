@@ -7,7 +7,7 @@ export default function ContactInfo({
 }) {
   return (
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col space-y-1.5 ${
         centered ? "items-center text-center" : "items-start text-left"
       }`}
     >

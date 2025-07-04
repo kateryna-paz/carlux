@@ -9,7 +9,7 @@ function Logo() {
         alt="Logo"
         width={200}
         height={100}
-        className="w-[120px] h-auto lg:w-[180px] md:w-[150px]"
+        className="w-[120px] h-auto lg:w-[170px] md:w-[150px]"
       />
     </Link>
   );
