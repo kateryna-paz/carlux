@@ -14,6 +14,7 @@ export default function ServicesContent() {
         {services.map((service, index) => (
           <ServiceItem
             key={index}
+            index={index}
             icon={service.icon}
             title={service.title}
             description={service.description}
