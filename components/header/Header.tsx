@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center lg:space-x-5 md:space-x-3">
           <ContactInfo />
           <div className="w-px h-12 bg-gray-600"></div>
-          <SocialLinks size={30} />
+          <SocialLinks size={34} />
         </div>
       </nav>
 

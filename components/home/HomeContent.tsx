@@ -43,7 +43,7 @@ export default function HomeContent() {
       <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
       <div
-        className="absolute left-0 lg:top-[260px] md:top-[240px] top-[220px] -translate-y-1/2 z-20 text-white max-w-[1000px]
+        className="absolute left-0 lg:top-[260px] md:top-[240px] top-[240px] -translate-y-1/2 z-20 text-white max-w-[1000px]
         bg-transparent"
       >
         <div className="bg-transparent bg-opacity-40 backdrop-blur-md pt-8 pb-4 rounded-r-[40px]  px-6 md:px-10 lg:px-12">
