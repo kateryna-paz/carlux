@@ -8,15 +8,20 @@ export default function MissionSection() {
     <div className="w-full flex flex-col md:flex-row items-center md:items-start bg-gray-800 bg-opacity-60 backdrop-blur-sm p-8 rounded-lg shadow-xl space-y-6 md:space-y-0 md:space-x-8">
       <FaBullseye className="text-orange-400 text-4xl md:text-5xl flex-shrink-0" />
       <div>
-        <h3 className="text-2xl md:text-3xl font-semibold mb-3 font-montserrat text-gray-200 text-center md:text-left">
-          Наша Місія: Ваші Мрії на Колесах
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-3 font-montserrat text-gray-200 text-center md:text-left">
+          <strong className="text-orange-300 font-semibold">Наша Місія</strong>{" "}
+          — Втілення Ваших Мрії в Рух
         </h3>
         <p className="text-base md:text-lg lg:text-lg font-light leading-relaxed font-kelly-slab">
-          Ми прагнемо зробити придбання автомобіля не просто покупкою, а
-          приємним досвідом. Наша місія – це створення довгострокових відносин,
-          заснованих на довірі, чесності та індивідуальному підході до кожного
-          клієнта. Ми гарантуємо найвищі стандарти якості та безпеки, щоб ви
-          могли насолоджуватися дорогою з першого кілометра.
+          Ми не просто продаємо транспорт — ми даруємо{" "}
+          <strong className="font-semibold">впевненість</strong>. Кожен
+          автомобіль, мотоцикл, катер чи одиниця спецтехніки проходить ретельну
+          перевірку, адже ми прагнемо, щоб ви насолоджувалися{" "}
+          <strong className="font-semibold">безпекою та комфортом</strong> з
+          першого ж кілометра. Будь то асфальт, водні простори чи робоче поле —{" "}
+          <strong className="text-orange-300">
+            ваша подорож починається з якості, яку ми гарантуємо!
+          </strong>
         </p>
       </div>
     </div>

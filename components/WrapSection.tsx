@@ -10,7 +10,7 @@ function WrapSection({
         gradient-bg
         mt-[110px]
         text-white flex flex-col items-center justify-center
-        px-6 md:px-10 lg:px-12 pt-9 pb-9
+        px-6 md:px-10 lg:px-12 pt-6 pb-9
         overflow-y-auto md:overflow-hidden 
         
       `}

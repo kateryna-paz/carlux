@@ -23,7 +23,7 @@ const fadeInUp: Variants = {
 export default function AboutContent() {
   return (
     <WrapSection>
-      <div className="max-w-2/3 w-full flex flex-col items-center space-y-12">
+      <div className="max-w-[1340px] w-full flex flex-col items-center space-y-12">
         <motion.div
           variants={fadeInUp}
           initial="hidden"

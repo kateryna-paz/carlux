@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import DetailsButton from "./DetailsButton";
 
 export default function HomeContent() {
   const router = useRouter();
@@ -43,27 +43,27 @@ export default function HomeContent() {
       <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
       <div
-        className="absolute left-0 lg:top-[260px] md:top-[240px] top-[240px] -translate-y-1/2 z-20 text-white max-w-[1000px]
+        className="absolute left-0 lg:top-[260px] md:top-[240px] top-[240px] -translate-y-1/2 z-20 text-white max-w-[1200px]
         bg-transparent"
       >
         <div className="bg-transparent bg-opacity-40 backdrop-blur-md pt-8 pb-4 rounded-r-[40px]  px-6 md:px-10 lg:px-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4 text-left font-montserrat">
-            Знайдемо авто вашої мрії!
+            Знайдемо транспорт вашої мрії!
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-left font-kelly-slab">
-            Ваш ідеальний автомобіль чекає. Широкий вибір перевірених авто з{" "}
-            <strong className="text-orange-400">США, Канади та Європи</strong>{" "}
-            від надійних виробників. Комфорт, якість, надійність – оберіть своє
-            авто сьогодні!
+            Ваш ідеальний транспортний засіб чекає. Ми пропонуємо широкий вибір
+            перевіреної техніки з{" "}
+            <strong className="text-medium">США, Канади та Європи</strong> від
+            надійних виробників.{" "}
+            <strong className="text-orange-300 lg:text-[21px] md:text-[19px] text-[17px]">
+              Автомобілі, мотоцикли, водний транспорт або сільськогосподарська
+              техніка{" "}
+            </strong>{" "}
+            – оберіть свій транспорт вже сьогодні, адже ми гарантуємо комфорт,
+            якість та надійність!
           </p>
         </div>
-        <button
-          onClick={() => router.push("/services")}
-          className="mx-6 md:mx-10 lg:mx-12 text-sm md:text-base lg:text-lg bg-orange-500 hover:bg-transparent border-2 transition-all duration-600 ease-in-out border-transparent border-b-orange-500 text-white flex gap-2 items-center font-montagu-slab font-semibold py-2 pl-8 pr-6 rounded-xl mt-6 cursor-pointer"
-        >
-          <span>Детальніше</span>
-          <IoIosArrowForward className="w-5 h-5" />
-        </button>
+        <DetailsButton onClick={() => router.push("/services")}></DetailsButton>
       </div>
     </section>
   );
