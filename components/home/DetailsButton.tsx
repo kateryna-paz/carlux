@@ -8,7 +8,7 @@ function DetailsButton({ onClick }: { onClick?: () => void }) {
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      className="mx-6 md:mx-10 lg:mx-12 text-sm md:text-base lg:text-lg bg-orange-500 hover:bg-transparent text-white border-2 border-orange-500 flex gap-2 items-center font-montagu-slab font-semibold py-2 pl-8 pr-6 rounded-xl mt-6 cursor-pointer transition-colors duration-900"
+      className="cursor-none mx-6 md:mx-10 lg:mx-12 text-sm md:text-base lg:text-lg bg-orange-500 hover:bg-transparent text-white border-2 border-orange-500 flex gap-2 items-center font-montagu-slab font-semibold py-2 pl-8 pr-6 rounded-xl mt-6 transition-colors duration-900"
       variants={{
         rest: {
           scale: 1,

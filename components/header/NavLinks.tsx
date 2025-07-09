@@ -23,7 +23,7 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
               path === item.href
                 ? "text-orange-400 font-semibold before:scale-x-100"
                 : "text-gray-300 hover:text-orange-300"
-            }
+            } cursor-none
             transition-all duration-300 ease-in-out
             before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 before:bg-orange-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-300 before:ease-out
             hover:before:scale-x-100
