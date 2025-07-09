@@ -14,7 +14,7 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header className="bg-transparent w-full h-[115px] flex items-center justify-between px-8 lg:px-16 absolute top-0 left-0 z-30">
+    <header className="bg-transparent w-full lg:h-[115px] md:h-[110px] h-[100px] flex items-center justify-between px-8 lg:pl-20 lg:pr-6 absolute top-0 left-0 z-30">
       <Logo />
 
       <nav className="hidden md:flex space-x-6 lg:space-x-10 items-center">

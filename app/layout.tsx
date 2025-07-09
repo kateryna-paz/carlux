@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import SmoothCursor from "@/components/SmoothCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +64,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex-grow">{children}</main>
+        <SmoothCursor />
       </body>
     </html>
   );

@@ -43,10 +43,10 @@ export default function HomeContent() {
       <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
       <div
-        className="absolute left-0 lg:top-[260px] md:top-[240px] top-[240px] -translate-y-1/2 z-20 text-white max-w-[1200px]
+        className="absolute left-0 lg:top-[120px] md:top-[112px] top-[90px] z-20 text-white max-w-[1200px]
         bg-transparent"
       >
-        <div className="bg-transparent bg-opacity-40 backdrop-blur-md pt-8 pb-4 rounded-r-[40px]  px-6 md:px-10 lg:px-12">
+        <div className="bg-transparent bg-opacity-40 backdrop-blur-md pt-2 md:pt-4 pb-4 rounded-r-[40px] px-6 md:px-10 lg:px-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4 text-left font-montserrat">
             Знайдемо транспорт вашої мрії!
           </h1>
