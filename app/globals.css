@@ -48,7 +48,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  cursor: none !important;
+  cursor: none;
 }
 
 .service-card-gradient {
@@ -67,4 +67,16 @@ body {
 
 .gradient-bg {
   background: linear-gradient(to bottom, #000000 0%, #0f0224 50%, #000000 100%);
+}
+
+.fade-mask {
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgb(0, 0, 0) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(circle, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
 }

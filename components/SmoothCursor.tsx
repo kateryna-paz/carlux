@@ -94,12 +94,12 @@ export default function SmoothFollower() {
   if (typeof window === "undefined") return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-50 hidden md:block">
+    <div className="pointer-events-none fixed inset-0 z-50">
       <div
         className="absolute rounded-full dark:bg-orange-200 bg-black "
         style={{
-          width: "8px",
-          height: "8px",
+          width: "6px",
+          height: "6px",
           transform: "translate(-50%, -50%)",
           left: `${renderPos.dot.x}px`,
           top: `${renderPos.dot.y}px`,

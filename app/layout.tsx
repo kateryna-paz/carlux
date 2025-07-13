@@ -9,6 +9,7 @@ import {
 import "./globals.css";
 import Header from "@/components/header/Header";
 import SmoothCursor from "@/components/SmoothCursor";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <SmoothCursor />
+        <Footer />
       </body>
     </html>
   );

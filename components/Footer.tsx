@@ -1,73 +1,58 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import ContactInfo from "./header/ContactInfo";
+import SocialLinks from "./header/SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white w-full py-8 px-4 md:px-8 lg:px-24 flex flex-col md:flex-row items-center md:items-start justify-between md:justify-around gap-8 md:gap-4 lg:gap-8">
-      <div className="flex flex-col items-center md:items-start w-full md:w-auto text-center md:text-left">
-        <div className="text-orange-500 text-2xl lg:text-3xl font-bold tracking-wider font-montagu-slab mb-1">
-          CarLux
+    <footer className="bg-black text-white w-full py-10 px-6 md:px-12 lg:px-20 shadow-[0_-8px_20px_rgba(270,160,30,0.7)] border-t-1 border-t-orange-400/60">
+      <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-start gap-10">
+        <div className="flex-1 md:basis-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="mb-3">
+            <Image
+              src="/images/CarLux.png"
+              alt="CarLux"
+              width={150}
+              height={150}
+            />
+          </div>
+          <p className="text-gray-300 text-sm md:text-base font-kelly-slab max-w-sm">
+            Транспорт з США, Канади та Європи. Надійно. Якісно. Доступно.
+          </p>
         </div>
-        <p className="text-gray-400 text-sm font-kelly-slab">Car showroom</p>
-      </div>
 
-      <div className="flex flex-col items-center md:items-start w-full md:w-auto text-center md:text-left">
-        <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 font-montserrat">
-          Соц-мережі
-        </h3>
-        <div className="flex space-x-4">
-          <Link
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-blue-600 transition-colors duration-200"
-          >
-            <Image
-              src="/icons/facebook.svg"
-              alt="Facebook"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link
-            href="https://telegram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-blue-400 transition-colors duration-200"
-          >
-            <Image
-              src="/icons/telegram.png"
-              alt="Telegram"
-              width={27}
-              height={27}
-            />
-          </Link>
-          <Link
-            href="https://www.instagram.com/carlux.ukraine?igsh=bm9ycGJtZzFqdnBl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-purple-600 transition-colors duration-200"
-          >
-            <Image
-              src="/icons/instagram.svg"
-              alt="Instagram"
-              width={24}
-              height={24}
-            />
-          </Link>
+        <div className="flex-1 md:basis-1/2 flex flex-col sm:flex-row justify-around items-center md:items-start gap-10 sm:gap-0">
+          <div className="flex flex-col items-center md:items-end text-center">
+            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 font-montserrat">
+              Ми на зв’язку
+            </h3>
+
+            <div className="mb-2">
+              <SocialLinks size={36} />
+            </div>
+
+            <p className="text-gray-300 text-base md:text-lg font-kelly-slab break-all">
+              <Link
+                href="mailto:carlux_usa@gmail.com"
+                className="hover:text-orange-300 transition-colors duration-200"
+              >
+                carlux_usa@gmail.com
+              </Link>
+            </p>
+          </div>
+          <div className="flex flex-col items-center md:items-end text-center">
+            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 md:mb-5 font-montserrat">
+              Телефони
+            </h3>
+            <ContactInfo />
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:items-start w-full md:w-auto text-center md:text-left">
-        <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 font-montserrat">
-          Телефон
-        </h3>
-        <p className="text-gray-300 text-xs md:text-sm lg:text-base font-kelly-slab">
-          +380 673 18 63 63
-        </p>
-        <p className="text-gray-300 text-xs md:text-sm lg:text-base font-kelly-slab">
-          +380 633 18 63 63
-        </p>
+      <div className="mt-10 pt-4 border-t border-gray-600 text-center text-gray-400 text-sm font-kelly-slab">
+        &copy; {new Date().getFullYear()} CarLux Ukraine. Усі права захищено.
       </div>
     </footer>
   );
