@@ -1,6 +1,7 @@
 import NavLinks from "./NavLinks";
 import ContactInfo from "./ContactInfo";
 import SocialLinks from "./SocialLinks";
+import Link from "next/link";
 
 export default function MobileMenu({
   isOpen,
@@ -26,9 +27,17 @@ export default function MobileMenu({
       <div className="w-full h-px bg-gray-700 my-4" />
 
       <ContactInfo centered />
-      <div className="mt-4">
+      <div className="my-4">
         <SocialLinks />
       </div>
+      <p className="text-gray-300 text-base md:text-lg font-kelly-slab break-all">
+        <Link
+          href="mailto:carlux_usa@gmail.com"
+          className="hover:text-orange-300 transition-colors duration-200"
+        >
+          carlux_usa@gmail.com
+        </Link>
+      </p>
     </div>
   );
 }

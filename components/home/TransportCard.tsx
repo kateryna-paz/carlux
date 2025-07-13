@@ -25,16 +25,15 @@ export default function TransportCard({
     >
       <div className="relative w-full md:w-1/2 h-[260px] md:h-[400px] z-20">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: index * 0.3, duration: 0.9 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className={`
             absolute ${
               isEven ? "md:-left-6" : "md:-right-6"
             } top-0 w-[80%] h-[70%] md:h-[80%] md:w-[90%] z-0
             rounded-2xl
-            
           `}
         >
           <Image
@@ -46,7 +45,12 @@ export default function TransportCard({
         </motion.div>
       </div>
 
-      <div
+      {/* Синхронізована анімація для текстового контейнера */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.2, duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
         className={`
           relative z-10 bg-white/90 backdrop-blur-md rounded-3xl
           top-1/2 translate-y-[-65%] translate-x-[5%]
@@ -67,7 +71,7 @@ export default function TransportCard({
         <p className="text-gray-800 text-sm md:text-base font-kelly-slab leading-relaxed">
           {description}
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }
