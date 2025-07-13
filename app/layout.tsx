@@ -65,8 +65,9 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex-grow">{children}</main>
-        <SmoothCursor />
+
         <Footer />
+        <SmoothCursor />
       </body>
     </html>
   );

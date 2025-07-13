@@ -7,7 +7,7 @@ import SocialLinks from "./header/SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white w-full py-10 px-6 md:px-12 lg:px-20 shadow-[0_-8px_20px_rgba(270,160,30,0.7)] border-t-1 border-t-orange-400/60">
+    <footer className="bg-black text-white w-full py-10 px-6 md:px-12 lg:px-20 shadow-[0_-8px_20px_rgba(300,130,10,0.5)] border-t-1 border-t-orange-400/60">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-start gap-10">
         <div className="flex-1 md:basis-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div className="mb-3">
@@ -16,6 +16,7 @@ export default function Footer() {
               alt="CarLux"
               width={150}
               height={150}
+              className="w-auto h-auto"
             />
           </div>
           <p className="text-gray-300 text-sm md:text-base font-kelly-slab max-w-sm">

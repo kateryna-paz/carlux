@@ -54,7 +54,8 @@ export default function HomeContent() {
       >
         <div className="md:hidden bg-transparent mb-4">
           <h1 className="text-2xl font-semibold leading-tight text-left font-montserrat px-6 ">
-            Знайдемо транспорт вашої мрії!
+            Знайдемо транспорт Знайдемо транспорт
+            <span className=" text-orange-400">вашої мрії!</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-left font-kelly-slab bg-transparent bg-opacity-40 backdrop-blur-md py-4 px-6 rounded-xl mb-4">
             Ми пропонуємо лише перевірені{" "}
@@ -67,7 +68,8 @@ export default function HomeContent() {
 
         <div className="hidden md:block bg-transparent bg-opacity-40 backdrop-blur-md pt-2 md:pt-4 pb-4 rounded-r-[40px] md:px-10 lg:px-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4 text-left font-montserrat">
-            Знайдемо транспорт вашої мрії!
+            Знайдемо транспорт{" "}
+            <span className=" text-orange-400">вашої мрії!</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-left font-kelly-slab">
             Ваш ідеальний транспортний засіб чекає. Ми пропонуємо широкий вибір
