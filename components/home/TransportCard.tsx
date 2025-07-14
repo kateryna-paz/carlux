@@ -28,7 +28,7 @@ export default function TransportCard({
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{
-            delay: index * 0.1,
+            delay: 0.2,
             duration: 0.6,
             ease: "easeOut",
           }}
@@ -54,7 +54,7 @@ export default function TransportCard({
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: index * 0.1,
+          delay: 0.2,
           duration: 0.6,
           ease: "easeOut",
         }}

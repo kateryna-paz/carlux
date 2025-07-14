@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { transportItems } from "../../constants/transportItems";
 import TransportCard from "./TransportCard";
+import GradientBackground from "./GradientBackground";
 
 export default function TransportSection() {
   return (
@@ -12,18 +12,7 @@ export default function TransportSection() {
       id="next-section"
       className="relative w-full h-auto flex items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 flex items-center justify-center z-0">
-        <Image
-          src="/images/car-bg4.jpg"
-          alt="Logo"
-          width={1920}
-          height={1080}
-          className="object-contain h-auto w-full opacity-70"
-          priority
-        />
-      </div>
-
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-md z-10" />
+      <GradientBackground />
 
       <div className="relative z-20 max-w-[1340px] w-full mx-auto px-6 mt-12 mb-20">
         <motion.h2
@@ -54,16 +43,19 @@ export default function TransportSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
-          className="mt-0 md:mt-14 text-center text-white font-kelly-slab text-lg md:text-xl max-w-5xl mx-auto"
+          className="mt-0 md:mt-10 text-center"
         >
-          <p>
-            Ваш ритм. Ваш вибір. Ваш транспорт. <br />
-            Ми перетворюємо техніку на рішення.{" "}
-            <strong className="font-bold">
-              {" "}
-              CarLux — більше, ніж просто авто.{" "}
-            </strong>
-          </p>
+          <div className="bg-gray-900/30  backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl max-w-4xl mx-auto">
+            <p className="text-white font-kelly-slab text-lg md:text-xl lg:text-2xl leading-relaxed mb-4">
+              Ваш ритм. Ваш вибір. Ваш транспорт.
+            </p>
+            <p className="text-gray-300 text-base md:text-lg font-kelly-slab">
+              Ми перетворюємо техніку на рішення.{" "}
+              <span className="text-orange-400 font-bold">
+                CarLux — більше, ніж просто авто.
+              </span>
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

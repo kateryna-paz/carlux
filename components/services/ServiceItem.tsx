@@ -65,7 +65,7 @@ export default function ServiceItem({
       whileHover={{
         transition: { duration: 0.3 },
       }}
-      className="group relative perspective-1000"
+      className="group relative perspective-1000 will-change-transform"
     >
       <motion.div
         variants={numberVariants}
@@ -87,7 +87,7 @@ export default function ServiceItem({
               : "text-blue-500/20 group-hover:text-blue-400/30"
           }
           transition-colors duration-500
-          select-none
+          select-none will-change-transform
         `}
       >
         {stepNumber}
@@ -190,7 +190,7 @@ export default function ServiceItem({
               group-hover:text-orange-100
               transition-colors duration-300
               leading-tight
-              mb-2 md:mb-3
+              mb-2 md:mb-3 will-change-transform
               ${isLeft ? "text-left" : "text-right"}
             `}
           >
@@ -212,7 +212,7 @@ export default function ServiceItem({
               font-kelly-slab
               leading-relaxed
               group-hover:text-slate-200
-              transition-colors duration-300
+              transition-colors duration-300 will-change-transform
               ${isLeft ? "text-left" : "text-right"}
             `}
           >
