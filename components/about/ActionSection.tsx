@@ -126,7 +126,7 @@ export default function ActionSection() {
             </div>
 
             <p className="text-gray-400 text-sm text-center mt-6">
-              Працюємо щодня з 9:00 до 21:00
+              Працюємо щодня з 10:00 до 21:00
             </p>
           </div>
         </div>

@@ -7,26 +7,26 @@ import SocialLinks from "./header/SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white w-full py-10 px-6 md:px-12 lg:px-20 shadow-[0_-8px_20px_rgba(300,130,10,0.5)] border-t-1 border-t-orange-400/60">
+    <footer className="bg-gradient-to-t from-gray-900 to-black text-white w-full py-10 px-6 md:px-12 lg:px-20 shadow-[0_-8px_30px_rgba(255,165,0,0.3)] border-t border-orange-400/40">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-start gap-10">
         <div className="flex-1 md:basis-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div className="mb-3">
             <Image
               src="/images/CarLux.png"
               alt="CarLux"
-              width={150}
-              height={150}
-              className="w-auto h-auto"
+              width={60}
+              height={100}
+              className=" lg:w-56 md:w-46 w-40 h-auto"
             />
           </div>
           <p className="text-gray-300 text-sm md:text-base font-kelly-slab max-w-sm">
-            Транспорт з США, Канади та Європи. Надійно. Якісно. Доступно.
+            Транспорт з США, Канади та Європи. <br /> Надійно. Якісно. Доступно.
           </p>
         </div>
 
         <div className="flex-1 md:basis-1/2 flex flex-col sm:flex-row justify-around items-center md:items-start gap-10 sm:gap-0">
           <div className="flex flex-col items-center md:items-end text-center">
-            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 font-montserrat">
+            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 font-montserrat text-orange-400">
               Ми на зв’язку
             </h3>
 
@@ -44,8 +44,8 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col items-center md:items-end text-center">
-            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 md:mb-5 font-montserrat">
-              Телефони
+            <h3 className="text-sm md:text-base lg:text-lg font-semibold mb-3 md:mb-5 font-montserrat text-orange-400">
+              Контакти
             </h3>
             <ContactInfo />
           </div>

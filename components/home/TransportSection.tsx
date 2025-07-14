@@ -29,8 +29,8 @@ export default function TransportSection() {
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-50px" }}
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center font-montserrat mb-16 relative"
         >
           Транспорт для будь-яких потреб
@@ -52,8 +52,8 @@ export default function TransportSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-50px" }}
           className="mt-0 md:mt-14 text-center text-white font-kelly-slab text-lg md:text-xl max-w-5xl mx-auto"
         >
           <p>

@@ -25,7 +25,6 @@ export default function SmoothFollower() {
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-    // Add event listeners
     window.addEventListener("mousemove", handleMouseMove);
 
     const interactiveElements = document.querySelectorAll(
@@ -36,7 +35,6 @@ export default function SmoothFollower() {
       element.addEventListener("mouseleave", handleMouseLeave);
     });
 
-    // Animation function for smooth movement
     const animate = () => {
       const lerp = (start: number, end: number, factor: number) => {
         return start + (end - start) * factor;
@@ -75,10 +73,8 @@ export default function SmoothFollower() {
       requestAnimationFrame(animate);
     };
 
-    // Start animation loop
     const animationId = requestAnimationFrame(animate);
 
-    // Clean up
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
 
