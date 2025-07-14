@@ -36,9 +36,12 @@ export default function HomeContent() {
           loop
           muted
           playsInline
+          preload="auto"
+          poster="/images/bg-car.jpg"
           className="absolute inset-0 w-full h-full object-cover z-0"
           onError={handleVideoError}
         >
+          <source src="/videos/car.webm" type="video/webm" />
           <source src="/videos/car.mp4" type="video/mp4" />
           Ваш браузер не підтримує відео тег.
         </video>
