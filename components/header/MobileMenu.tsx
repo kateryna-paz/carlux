@@ -35,11 +35,11 @@ export default function MobileMenu({
 
       <p className="text-gray-300 text-base md:text-lg font-kelly-slab text-center px-4">
         <Link
-          href="mailto:carlux_usa@gmail.com"
+          href="mailto:carluxzp@gmail.com"
           className="hover:text-orange-300 transition-colors duration-200 break-all"
           onClick={onClose}
         >
-          carlux_usa@gmail.com
+          carluxzp@gmail.com
         </Link>
       </p>
     </div>

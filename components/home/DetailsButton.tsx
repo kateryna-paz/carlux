@@ -13,7 +13,7 @@ function DetailsButton({
       onClick={onClick}
       className={`
         ${className}
-        cursor-none flex justify-center mt-auto
+        cursor-pointer flex justify-center mt-auto
         bg-transparent 
         text-white 
         shadow-[0_0_30px_rgba(270,160,30,0.7)] 

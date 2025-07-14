@@ -8,7 +8,7 @@ export default function SocialLinks({ size = 36 }: { size?: number }) {
         href="https://t.me/carlux_usa"
         target="_blank"
         rel="noopener noreferrer"
-        className="cursor-none"
+        className="cursor-pointer"
       >
         <Image
           src="/icons/telegram.png"
@@ -26,7 +26,7 @@ export default function SocialLinks({ size = 36 }: { size?: number }) {
         href="https://www.instagram.com/carlux.ukraine?igsh=bm9ycGJtZzFqdnBl"
         target="_blank"
         rel="noopener noreferrer"
-        className="cursor-none"
+        className="cursor-pointer"
       >
         <Image
           src="/icons/instagram.svg"

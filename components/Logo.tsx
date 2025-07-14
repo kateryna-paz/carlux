@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <Link href={"/"} className="cursor-none">
+    <Link href={"/"} className="cursor-pointer">
       <Image
         src="/images/logo.png"
         alt="Logo"

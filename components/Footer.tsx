@@ -36,10 +36,10 @@ export default function Footer() {
 
             <p className="text-gray-300 text-base md:text-lg font-kelly-slab break-all">
               <Link
-                href="mailto:carlux_usa@gmail.com"
+                href="mailto:carluxzp@gmail.com"
                 className="hover:text-orange-300 transition-colors duration-200"
               >
-                carlux_usa@gmail.com
+                carluxzp@gmail.com
               </Link>
             </p>
           </div>

@@ -13,13 +13,13 @@ export default function ContactInfo({
     >
       <Link
         href="tel:+380673186363"
-        className="text-gray-300 cursor-none hover:text-orange-300 focus:text-orange-400 text-base lg:text-lg font-kelly-slab"
+        className="text-gray-300 cursor-pointer hover:text-orange-300 focus:text-orange-400 text-base lg:text-lg font-kelly-slab"
       >
         +380 673 18 63 63
       </Link>
       <Link
         href="tel:+380633186363"
-        className="text-gray-300 cursor-none hover:text-orange-300 focus:text-orange-400 text-base lg:text-lg font-kelly-slab"
+        className="text-gray-300 cursor-pointer hover:text-orange-300 focus:text-orange-400 text-base lg:text-lg font-kelly-slab"
       >
         +380 633 18 63 63
       </Link>
